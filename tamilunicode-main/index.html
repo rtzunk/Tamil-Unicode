@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Tamil typing online - Free thanglish to tamil translator  </title>
+    <meta name="description" content="A simple, easy to use and fast Thanglish to Tamil translator. Best Tamil typing online Tool With User friendly interface.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png" />
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="theme-color" content="#303134">
+    <link rel="canonical" href="https://tamilunicode.madusanka.net" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css.css">
+    
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tamil typing online">
+<meta property="og:description" content="A simple, easy to use and fast Thanglish to Tamil translator. ">
+<meta property="og:image" content="og.png">
+  </head>
+  <nav class="navbar navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://tamilunicode.madusanka.net/">
+        <img src="logo.webp" alt="Tamil Typing" width="40" height="40" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"> Tamil Unicode Tools</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        
+            <li class="nav-item md ">
+              <a class="nav-link" href="bamini">Unicode To Bamini</a>
+            </li>
+            <hr>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onclick="themeToggle()">
+              <label class="form-check-label" for="flexSwitchCheckChecked">Switch To Darkmode/Lightmode</label>
+            </div>
+            <hr>
+            <a href="https://www.facebook.com/tamilunicodetool" target="_blank" rel="noopener noreferrer"> Facebook </a>
+            <hr>
+            <p> With the help of Tamil unicode converter you can easily write India and Sri Lanka based Tamil language and convert it to unicode font. It is open source and you can easily handle Tamil language. 
+              <br> தமிழ் யுனிகோட் மாற்றியின் உதவியுடன் நீங்கள் இந்தியா மற்றும் இலங்கை சார்ந்த தமிழ் மொழியை எளிதாக எழுதி யூனிகோட் எழுத்துருவாக மாற்றலாம். இது ஓப்பன் சோர்ஸ் மற்றும் நீங்கள் எளிதாக தமிழ் மொழியை கையாளலாம்.  <br><br> Code licensed GNU-AGPL-3.0 <br> Currently v2.2 </p>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <body onload="javascript:txtBox.box1.focus();">
+    <br>
+    <div class="container-fluid mt-2">
+      <div class="row">
+        <div class="col-md-12 ">
+          <h1> Tamil typing online </h1>
+          <hr>
+        </div>
+      </div>
+    </div>
+    <br>
+    <form name="txtBox" id="txtBox">
+      <div class="row">
+        <div class="col-md-12  ">
+          <span>
+            <h6>Transliterated (ThanGlish Eg:ammaa)</h6>
+          </span>
+          <textarea class="form-control shadow-none " onkeyup="startText();" onselect="startText();" onclick="startText();" name="box1" rows="7"></textarea>
+        </div>
+      </div>
+      </br>
+      <div class="row">
+        <div class="col-md-12">
+          <span>
+            <h6>Tamil</h6>
+          </span>
+          <textarea class="form-control shadow-none " name="box2" id="unicode" rows="7"></textarea>
+          <input class="btn float-end mt-1" type="reset" value="Reset" data-toggle="popover">
+          <input class="btn  mt-1" id="copy" onclick="copyText()" type="button" value="Copy" data-toggle="popover" data-bs-content=" Copied to the clipboard.">
+          </br>
+          </br>
+          </br>
+          <h2>Thanglish to tamil translator</h2>
+          <p>
+            <strong> Tamil typing online </strong> Is 100% Privacy Protected Tamil Type Tool. Type in Tamil is an online Thanglish typing user board that can be input in Google Phonetic format and instantly convert to Tamil Unicode.</br> Singlish To Sinhala, You Can Bookmark This Page Press Ctrl+D.
+        </div>
+      </div>
+    </form>
+    <footer class="bg-dark mt-3">
+      <div class="container-fluid">
+        <div class="col-md-6">
+          <ul class="list-group list-group-flush"></ul>
+        </div>
+        <div class="row">
+          <div class="col-md-12  text-center text-white my-3">
+            <p>&copy; Designed and built the @itzmadusanka with the help of our contributors. </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js"></script>
+    <script src="type.js" defer></script>
+    <script src="dark.js" defer></script>
+  </body>
+</html>

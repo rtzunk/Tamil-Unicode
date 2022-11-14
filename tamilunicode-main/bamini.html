@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Unicode to Bamini - Real Time Tamil Unicode Converter</title>
+    <meta name="description" content="Tamil Unicode Converter is an online Unicode Tamil converter that can convert any Unicode to bamini. ">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="favicon.png" rel="shortcut icon">
+    <meta charset="utf-8">
+    <link href="https://tamilunicode.madusanka.net/bamini" rel="canonical">
+    <meta content="True" name="HandheldFriendly">
+    <meta content="#303134" name="theme-color">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css.css">
+    
+<meta property="og:type" content="website">
+<meta property="og:title" content="Unicode To Bamini">
+<meta property="og:description" content="A simple, easy to use Unicode To Bamini ">
+<meta property="og:image" content="og.png">
+  </head>
+  <nav class="navbar navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://tamilunicode.madusanka.net/">
+        <img src="logo.webp" alt="Unicode to Bamini " width="40" height="40" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"> Tamil Unicode Tools</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index"> Type in Tamil </a>
+            </li>
+            <hr>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onclick="themeToggle()">
+              <label class="form-check-label" for="flexSwitchCheckChecked">Switch To Darkmode/Lightmode</label>
+            </div>
+            <hr>
+            <a href="https://www.facebook.com/tamilunicodetool" target="_blank" rel="noopener noreferrer"> Facebook </a>
+            <hr>
+            <p> With the help of Tamil unicode converter you can easily write India and Sri Lanka based Tamil language and convert it to unicode font. It is open source and you can easily handle Tamil language. 
+              <br> தமிழ் யுனிகோட் மாற்றியின் உதவியுடன் நீங்கள் இந்தியா மற்றும் இலங்கை சார்ந்த தமிழ் மொழியை எளிதாக எழுதி யூனிகோட் எழுத்துருவாக மாற்றலாம். இது ஓப்பன் சோர்ஸ் மற்றும் நீங்கள் எளிதாக தமிழ் மொழியை கையாளலாம்.  <br><br> Code licensed GNU-AGPL-3.0 <br> Currently v2.2 </p>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <body onload="javascript:converter.unicode.focus();">
+    <br>
+    <div class="container-fluid mt-2">
+      <div class="row">
+        <div class="col-md-12 ">
+          <h1>Unicode to bamini</h1>
+          <hr>
+        </div>
+      </div>
+      <br>
+      <form id="converter" name="converter">
+        <div class="row">
+          <div class="col-md-12">
+            <span></span>
+            <h6>
+              <span>Unicode</span>
+            </h6>
+            <textarea class="form-control shadow-none" name="unicode" onclick="startText();" onkeyup="startText();" onselect="startText();" rows="7"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <span></span>
+            <h6>
+              <span>Font</span>
+            </h6>
+            <span></span>
+            <textarea class="form-control shadow-none" id="abhaya" name="abhaya" rows="7" style="font-family: sans-serif!important;"></textarea>
+            <input class="btn float-end mt-1" data-toggle="popover" data-trigger="focus" type="reset" value="Reset">
+            <input class="btn mt-1" data-bs-content="Copied to clipboard." data-toggle="popover" id="copy" onclick="copyText()" type="button" value="Copy">
+          </div>
+        </div>
+      </form>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Tamil Unicode Converter</h2>
+          <p>
+            <strong>Unicode to bamini</strong>  This easily translate Tamil Fonts and you can quickly translate your Bamini words. This converter supports Google Input and bamini Unicode converter 100% Privacy Protected. Go to home page for Tamil typing. <br>  You Can Bookmark This Page Press Ctrl+D.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class=" bg-dark mt-3">
+      <div class="container-fluid"></div>
+      <div class="row">
+        <div class="col-md-12 text-center text-white my-3">
+          <p>&copy; Designed and built the @itzmadusanka with the help of our contributors. </p>
+        </div>
+      </div>
+    </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js"></script>
+    <script defer src="bamini.js" defer></script>
+    <script src="dark.js" defer></script>
+  </body>
+</html>
